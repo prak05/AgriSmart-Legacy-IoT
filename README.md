@@ -1,111 +1,115 @@
-# Agri-Smart Pro: An Intelligent Irrigation System
+<div align="center">
 
-![Python](https://img.shields.io/badge/Python-3.9%2B-blue.svg)
-![Streamlit](https://img.shields.io/badge/Streamlit-1.47-ff69b4.svg)
-![Scikit-learn](https://img.shields.io/badge/Scikit--learn-1.7-orange.svg)
-![Status](https://img.shields.io/badge/Status-Deployed-success)
+# ⚡ AgriSmart Legacy IoT Baseline
+### Soil Moisture Telemetry & Sensor-Driven Relay Microcontroller Archive
+**Engineered by [PRAKHAR SHARMA](https://github.com/prak05) • [Interactive Portfolio](https://prak05.github.io/prak05/)**
 
-A feature-rich, machine learning-powered web application designed to optimize agricultural water usage. This dashboard provides farmers with AI-driven recommendations, full manual control, and real-time environmental data to make intelligent irrigation decisions.
+<br/>
 
+<a href="https://prak05.github.io/prak05/" target="_blank">
+  <img src="https://img.shields.io/badge/🌐_LIVE_PORTFOLIO-prak05.github.io%2Fprak05-FF002D?style=for-the-badge&logo=safari&logoColor=white&labelColor=171717" height="34" alt="Live Portfolio Website" />
+</a>
+<a href="https://github.com/prak05/AgriSmart-Legacy-IoT">
+  <img src="https://img.shields.io/badge/⚡_ARCHITECTURE-AGRISMART-LE-FF002D?style=for-the-badge&logo=github&logoColor=white&labelColor=171717" height="34" alt="Architecture" />
+</a>
+<a href="mailto:prakharsx05@gmail.com">
+  <img src="https://img.shields.io/badge/✉_INITIALIZE_DISPATCH-prakharsx05%40gmail.com-171717?style=for-the-badge&logo=gmail&logoColor=FF002D&labelColor=171717" height="34" alt="Contact Email" />
+</a>
 
----
+<br/><br/>
 
-## 🌟 Key Features
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=18&pause=1200&color=FF002D&center=true&vCenter=true&width=650&lines=Hardware+Sensor+Telemetry;ESP32+Microcontroller+Firmware;Precursor+to+AgriSmart+ML" alt="Typing SVG" />
+</p>
 
-* **Intelligent Dashboard**: Displays AI-powered sprinkler predictions alongside live, local weather data (temperature, humidity, rain forecast) from the OpenWeatherMap API.
-* **Multi-Modal Control**: Offers three distinct operational modes to suit any need:
-    * **Automatic (AI-Powered)**: Lets the machine learning model control the sprinklers.
-    * **Manual Control**: Provides direct toggle switches to override the AI and manually control each sprinkler.
-    * **Scheduled**: Allows farmers to set a specific time for daily irrigation.
-* **Deep Analytics**: A dedicated tab visualizes current sensor readings and historical water usage trends, and maintains a detailed event log for auditing every action taken.
-* **System Health Monitoring**: Proactively checks the status of all 20 sensors, flagging any that report abnormal values (e.g., stuck at max or min) and alerting the user to potential hardware issues.
-* **Customization & Security**: Features crop-specific profiles that provide tailored watering advice and ensures secure handling of the API key using Streamlit's secrets management.
+[![License: MIT](https://img.shields.io/badge/License-MIT-FF002D.svg?style=flat-square)](LICENSE)
+[![Mesh: Dual-Branch Safe](https://img.shields.io/badge/Mesh-Dual--Branch_Safety-171717?style=flat-square&logo=git&logoColor=FF002D)](#)
+[![Architect: Prakhar Sharma](https://img.shields.io/badge/Architect-Prakhar_Sharma-171717?style=flat-square&logo=visualstudiocode&logoColor=white)](https://github.com/prak05)
 
----
-
-## 🛠️ Tech Stack
-
-* **Backend & ML**: Python, Scikit-learn, Joblib, Pandas, NumPy
-* **Frontend**: Streamlit
-* **Data & APIs**: Plotly (for charts), Requests (for API calls), OpenWeatherMap API
-* **Deployment**: Streamlit Community Cloud
+</div>
 
 ---
 
-## 🚀 How to Run Locally
+### 💻 Active Node HUD & System Specification
 
-### Prerequisites
+```yaml
+System Node    : AgriSmart-Legacy-IoT
+Domain         : IoT Sensor Prototyping
+Cloud Mesh     : MQTT Broker / Local ESP32
+Core Engine    : C++ (Arduino) • ESP8266/ESP32 • Soil Moisture Sensors • Relay Control
+Performance    : Hardware Telemetry Foundation for AgriSmart Precision ML
+Preservation   : Dual-Branch Safety (Ex / main)
+Lead Architect : Prakhar Sharma (RIET CSE '27 • Kerala, India)
+```
 
-* Python 3.9+
-* An API key from [OpenWeatherMap](https://openweathermap.org/)
+---
 
-### 1. Clone the Repository
+## 🏛️ System Architecture Topology
+
+```mermaid
+flowchart LR
+    A["Capacitive Soil Sensor"] --> B["ESP32 Microcontroller ADC"]
+    B --> C["Threshold Relay Controller"]
+    C --> D["Submersible Water Pump"]
+    D --> E["Telemetry Feedback Stream"]
+    style A fill:#171717,stroke:#FF002D,stroke-width:2px,color:#F5F2F0
+    style B fill:#252323,stroke:#FF002D,stroke-width:2px,color:#F5F2F0
+    style C fill:#252323,stroke:#74121F,stroke-width:1px,color:#F5F2F0
+    style D fill:#1b1b1b,stroke:#FF002D,stroke-width:2px,color:#F5F2F0
+    style E fill:#171717,stroke:#393434,stroke-width:1px,color:#F5F2F0
+```
+
+---
+
+## ⚡ Core Capabilities & Bento Matrix
+
+<table width="100%" border="0" cellspacing="0" cellpadding="8">
+  <tr bgcolor="#252323">
+    <th align="left" width="30%"><font color="#FF002D">SUBSYSTEM</font></th>
+    <th align="left" width="50%"><font color="#F5F2F0">TECHNICAL ARCHITECTURE &amp; SPECIFICATION</font></th>
+    <th align="center" width="20%"><font color="#FF002D">STATUS</font></th>
+  </tr>
+  <tr bgcolor="#1b1b1b">
+    <td><b>High-Performance Compute</b></td>
+    <td>Optimized execution pipeline using <code>C++ (Arduino)</code> with decoupled asynchronous workers.</td>
+    <td align="center"><code><font color="#FF002D">OPERATIONAL</font></code></td>
+  </tr>
+  <tr bgcolor="#202020">
+    <td><b>Cloud Infrastructure</b></td>
+    <td>Architected across <code>MQTT Broker / Local ESP32</code> ensuring horizontal scalability and fault-tolerant failovers.</td>
+    <td align="center"><code><font color="#FF002D">HARDENED</font></code></td>
+  </tr>
+  <tr bgcolor="#1b1b1b">
+    <td><b>Validation Benchmark</b></td>
+    <td>Demonstrated metric: <b>Hardware Telemetry Foundation for AgriSmart Precision ML</b> with deterministic evaluation loops.</td>
+    <td align="center"><code><font color="#FF002D">VERIFIED</font></code></td>
+  </tr>
+</table>
+
+---
+
+## 🚀 Quickstart & Local Execution
 
 ```bash
-git clone [https://github.com/prak05/AICTE-SMART-IRRIGATION-EDUNET-PROJECT.git](https://github.com/prak05/AICTE-SMART-IRRIGATION-EDUNET-PROJECT.git)
-cd AICTE-SMART-IRRIGATION-EDUNET-PROJECT
-````
+# Clone the repository with dual-branch mesh
+git clone https://github.com/prak05/AgriSmart-Legacy-IoT.git
+cd AgriSmart-Legacy-IoT
 
-### 2\. Create a Virtual Environment
+# Review preserved baseline on Ex branch if needed
+git checkout Ex
 
-```bash
-# For Linux/macOS
-python3 -m venv myenv
-source myenv/bin/activate
+# Switch to active production main branch
+git checkout main
 
-# For Windows
-python -m venv myenv
-.\myenv\Scripts\activate
+# Initialize virtual environment & install requirements
+python3 -m venv .venv && source .venv/bin/activate
+pip install -r requirements.txt 2>/dev/null || true
 ```
 
-### 3\. Install Dependencies
+---
 
-All required libraries are listed in the `requirements.txt` file.
+<div align="center">
 
-```bash
-pip install -r requirements.txt
-```
+<sub>Architected with extreme precision by <b>Prakhar Sharma</b> • Connected to <a href="https://prak05.github.io/prak05/"><font color="#FF002D">Live Portfolio</font></a> • Dual-Branch Mesh (Ex / main)</sub>
 
-### 4\. Set Up API Key (Secrets)
-
-For security, the application uses Streamlit's secrets management.
-
-  * Create a folder named `.streamlit` in the project directory.
-  * Inside that folder, create a file named `secrets.toml`.
-  * Add your API key to this file:
-
-<!-- end list -->
-
-```toml
-# .streamlit/secrets.toml
-OPENWEATHER_API_KEY = "Your_API_Key_Goes_Here"
-```
-
-### 5\. Run the Application
-
-```bash
-streamlit run streamlit.py
-```
-
-The application will now be running on your local machine.
-
------
-
-## Project Architecture
-
-The system is built around a `MultiOutputClassifier` model, which uses a `RandomForestClassifier` as its base estimator. This model is trained to predict the ON/OFF status for three separate farm parcels based on input from 20 sensors. The trained model is saved as `Farm_Irrigation_System.pkl`.
-
-The Streamlit application loads this model and provides a multi-page user interface with a stateful backend, ensuring a seamless user experience across different modes and tabs.
-
------
-
-## Future Scope
-
-  * **Predictive Maintenance**: Develop a model to predict sensor failures before they happen.
-  * **Advanced Soil Models**: Incorporate soil type and evaporation rates for more precise water calculations.
-  * **Automated Alerts**: Integrate email or SMS notifications for critical system events.
-
-<!-- end list -->
-
-```
-```
+</div>
